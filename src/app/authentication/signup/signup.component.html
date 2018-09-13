@@ -1,0 +1,13 @@
+
+<form (ngSubmit)="onSignup(f)" #f="ngForm">
+  <div class="form-group col-md-6 mx-auto">
+    <label for="email">UserName</label>
+    <input class="form-control" type="text" id="email" name="email" ngModel>
+  </div>
+  <div class="form-group col-md-6 mx-auto">
+    <label for="password">Password</label>
+    <input class="form-control" type="text" id="password" name="password" ngModel>
+  </div>
+  <button class="btn btn-success mx-auto">Sign Up</button>
+</form>
+
