@@ -1,13 +1,20 @@
-
-<form (ngSubmit)="onSignup(f)" #f="ngForm">
-  <div class="form-group col-md-6 mx-auto">
-    <label for="email">UserName</label>
-    <input class="form-control" type="text" id="email" name="email" ngModel>
+<div class="row">
+  <div class="col-md-6 mx-auto mt-5">
+    <form (ngSubmit)="onSignup(f)" #f="ngForm">
+      <div class="form-group col-md-12 mx-auto">
+        <label for="email">Mail</label>
+        <input class="form-control" type="text" id="email" name="email" ngModel placeholder="your@email.com">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group col-md-12 mx-auto">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" id="password" name="password" ngModel placeholder="******">
+        <small id="passwordHelp" class="form-text text-muted"> The password must be 6 characters long!</small>
+      </div>
+      <div class="form-group col-md-12 mx-auto">
+        <button class="btn btn-primary mx-auto">Sign Up</button>
+      </div>
+    </form>
   </div>
-  <div class="form-group col-md-6 mx-auto">
-    <label for="password">Password</label>
-    <input class="form-control" type="text" id="password" name="password" ngModel>
-  </div>
-  <button class="btn btn-success mx-auto">Sign Up</button>
-</form>
+</div>
 
